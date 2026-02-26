@@ -4,7 +4,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import dogRoutes from '../routes/dogRoutes';
 import * as dogController from '../controllers/dogController';
 
-describe('dogRoutes negative ja error', () => {
+describe('dogApi negative ja error', () => {
   let app: express.Express;
 
   beforeEach(() => {
@@ -33,4 +33,5 @@ describe('dogRoutes negative ja error', () => {
     expect(response.body).toEqual(mockedErrorResponse);
     expect(mockController).toHaveBeenCalled();
   });
+
 });
